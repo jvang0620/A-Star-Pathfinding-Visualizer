@@ -1,6 +1,6 @@
-# A\* Pathfinding Algorithm
+# A\* Pathfinding Visualizer
 
-# Table of Contents
+### Table of Contents
 
 1. [Pathfinding App Overview](#pathfinding-app-overview])
 2. [Key Features](#key-features)
