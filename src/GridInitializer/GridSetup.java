@@ -272,8 +272,8 @@ public class GridSetup {
 
         for (int i = 0; i < numRows; i++) {
             for (int j = 0; j < numCols; j++) {
-                // Assign a value of 1 (obstacle) with a probability of 10%
-                grid[i][j] = random.nextDouble() < 0.1 ? 1 : 0;
+                // Assign a value of 1 (obstacle) with a probability of 50% (0.5)
+                grid[i][j] = random.nextDouble() < 0.5 ? 1 : 0;
             }
         }
     }
