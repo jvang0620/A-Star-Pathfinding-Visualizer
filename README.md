@@ -64,8 +64,25 @@ Overall, this pathfinding application provides a versatile tool that can be adap
 
 3. Grid Generation and Display:
 
-   - The generateGrid() method randomly generates obstacles in the grid.
-   - The displayGrid() method displays the grid with obstacles and empty spaces.
+   - The `generateGrid()` method randomly generates obstacles in the grid. It accomplishes this by assigning a value of 1 (representing an obstacle) to certain grid cells based on a probability of 50%. Each cell's value is determined independently, resulting in a grid with randomly distributed obstacles and empty spaces. Here's an example of how to use it:
+
+     ```java
+     /**
+      * Generates a grid with random obstacles.
+      */
+     static void generateGrid() {
+         grid = new int[numRows][numCols];
+
+         for (int i = 0; i < numRows; i++) {
+             for (int j = 0; j < numCols; j++) {
+                 // Assign a value of 1 (obstacle) with a probability of 50% (0.5)
+                 grid[i][j] = random.nextDouble() < 0.5 ? 1 : 0;
+             }
+         }
+     }
+     ```
+
+   - The `displayGrid()` method displays the grid with obstacles and empty spaces.
 
 4. A Pathfinding Algorithm\*:
 
